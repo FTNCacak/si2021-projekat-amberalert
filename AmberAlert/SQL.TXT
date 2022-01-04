@@ -1,0 +1,58 @@
+CREATE TABLE [dbo].[PoliceOfficers] (
+    [PoliceBadgeNumber]        INT            NOT NULL,
+    [FirstName]                NVARCHAR (50)  NOT NULL,
+    [SurName]                  NVARCHAR (50)  NOT NULL,
+    [PoliceDepartment]         NVARCHAR (100) NOT NULL,
+    [Job]                      NVARCHAR (100) NOT NULL,
+    [PoliceMotorolaNumber]     INT            NOT NULL,
+    [VehicleRegistrationPlate] VARCHAR (9)    NULL,
+    PRIMARY KEY CLUSTERED ([PoliceBadgeNumber] ASC)
+);
+
+
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (100000, N'Darko', N'Kovacevic', N'Uzice', N'Director', 4440, NULL)
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (334455, N'Marko', N'Dakic', N'Čačak', N'Officer', 2312, N'CA-123-KK')
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (554255, N'Milan', N'Janjic', N'Kraljevo', N'Inspector', 2345, N'KV-229-LO')
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (994292, N'Ognjen', N'Petkovic', N'Beograd', N'Officer', 2111, N'BG-099-JD')
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (213456, N'Mihailo', N'Živanović', N'Čačak', N'Inspector', 8763, N'CA-324-IR')
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (747835, N'Ivan', N'Delić', N'Novi Sad', N'Officer', 5231, N'NS-555-TB')
+
+
+CREATE TABLE [dbo].[MissingPeople] (
+    [IdMiss]              INT           NOT NULL,
+    [FirstName]           NVARCHAR (50) NOT NULL,
+    [SurName]             NVARCHAR (50) NOT NULL,
+    [JMBG]                BIGINT           NOT NULL,
+    [DateOfBirth]         DATE      NOT NULL,
+    [Address]             VARCHAR (100) NOT NULL,
+    [Gender]              NVARCHAR (10) NOT NULL,
+    [DateOfDisappearance] DATETIME      NOT NULL,
+    [ImageOfPerson]       BIT           NULL,
+    PRIMARY KEY CLUSTERED ([IdMiss] ASC)
+);
+
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (1, N'Jovan', N'Dukić', 1412000782812, N'2000-04-05 00:00:00', N'Bulevar Revolucije 21, Kragujevac', N'Male', N'2018-09-08 21:00:00', 0)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (2, N'Milos', N'Petrović', 301993453690, N'1993-03-01 00:00:00', N'Kraljice Marije 43, Beograd', N'Male', N'2020-02-04 00:30:00', 1)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (3, N'Katarina', N'Milošević', 910010591215, N'2010-09-10 00:00:00', N'Dimitrija Tucovica 7, Uzice', N'Female', N'2021-10-10 23:45:00', 0)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (4, N'Marija', N'Janković', 1003979777224, N'1979-10-03 00:00:00', N'Karadjordjeva 10, Kruševac', N'Female', N'2007-01-12 03:40:00', 0)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (5, N'Vladimir', N'Tepić', 809015345426, N'2015-08-09 00:00:00', N'Ustanica 96, Beograd', N'Male', N'2021-11-01 10:00:00', 0)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (6, N'Uroš', N'Lakić', 1102996782898, N'2001-11-26 00:00:00', N'Tanaska Rajica 25, Cacak', N'Male', N'2020-08-05 17:00:00', 1)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (7, N'Milena', N'Veličić', 304005787825, N'2005-03-04 00:00:00', N'Velimira Živojinovica 125, Knin', N'Female', N'2021-05-05 06:35:00', NULL)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (8, N'Kristina', N'Urošević', 708011542311, N'2011-07-08 00:00:00', N'Slatina bb, Cacak', N'Female', N'2021-10-02 01:50:00', NULL)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (9, N'Goran', N'Bojović', 1211998584921, N'1998-12-11 00:00:00', N'Zdravka Celara 54, Beograd', N'Male', N'2021-05-12 18:30:00', 1)
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [JMBG], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (10, N'Zoran', N'Savić', 104009593531, N'2009-01-04 00:00:00', N'Milutina Milankovica 2, Beograd', N'Male', N'2021-02-11 14:15:00', 1)
+
+CREATE TABLE [dbo].[Finding] (
+    [DateOfFinding] DATETIME       NOT NULL,
+    [Location]      NVARCHAR (100) NOT NULL,
+    [Dead]          BIT            NULL,
+    [PoliceId]      INT            NOT NULL,
+    [IdMis]         INT            NOT NULL,
+    PRIMARY KEY CLUSTERED ([DateOfFinding] ASC),
+    CONSTRAINT [FK_PoliceBagdeNumber] FOREIGN KEY ([PoliceId]) REFERENCES [dbo].[PoliceOfficers] ([PoliceBadgeNumber]),
+    CONSTRAINT [FK_IdMiss] FOREIGN KEY ([IdMis]) REFERENCES [dbo].[MissingPeople] ([IdMiss])
+);
+
+INSERT INTO [dbo].[Finding] ([DateOfFinding], [Location], [Dead], [PoliceId], [IdMis]) VALUES (N'2021-11-10 00:00:00', N'Janka Veselinovića 12, Stepojevac', 0, 747835, 1)
+
+
