@@ -33,10 +33,12 @@ namespace DataAccessLayer
                     p.PoliceBadgeNumber = sqlDataReader.GetInt32(0);
                     p.FirstName = sqlDataReader.GetString(1);
                     p.SurName = sqlDataReader.GetString(2);
-                    p.PoliceDepartment = sqlDataReader.GetString(3);
-                    p.Job = sqlDataReader.GetString(4);
-                    p.PoliceMotorolaNumber = sqlDataReader.GetInt32(5);
-                    p.VehicleRegistrationPlate = sqlDataReader.GetString(6);
+                    p.UserName = sqlDataReader.GetString(3);
+                    p.Password = sqlDataReader.GetString(4);
+                    p.PoliceDepartment = sqlDataReader.GetString(5);
+                    p.Job = sqlDataReader.GetString(6);
+                    p.PoliceMotorolaNumber = sqlDataReader.GetInt32(7);
+                    p.VehicleRegistrationPlate = sqlDataReader.GetString(8);
 
                     listOfPoliceOfficers.Add(p);
                 }
@@ -53,7 +55,7 @@ namespace DataAccessLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = string.Format("INSERT INTO PoliceOfficers VALUES({0},'{1}','{2}','{3}','{4}',{5},'{6}')", p.PoliceBadgeNumber, p.FirstName, p.SurName, p.PoliceDepartment, p.Job, p.PoliceMotorolaNumber, p.VehicleRegistrationPlate);
+                sqlCommand.CommandText = string.Format("INSERT INTO PoliceOfficers VALUES({0},'{1}','{2}','{3}','{4}','{5}','{6}',{7},'{8}')", p.PoliceBadgeNumber, p.FirstName, p.SurName,p.UserName,p.Password, p.PoliceDepartment, p.Job, p.PoliceMotorolaNumber, p.VehicleRegistrationPlate);
 
                 return sqlCommand.ExecuteNonQuery();
             }
