@@ -1,6 +1,10 @@
 .vs/
 AmberAlertApp/packages
-AmberAlertBusiness/obj/Debug/MagacinBusiness.csproj.FileListAbsolute.txt
+AmberAlertApp\AmberAlertBusiness\obj
+AmberAlertApp\DataAccessLayer\obj
+AmberAlertApp\PresentationLayer\obj
+AmberAlertApp\PresentationLayer\Scripts
+AmberAlertApp\PresentationLayerWeb\obj
+AmberAlertApp\PresentationLayerWeb\Scripts
+AmberAlertApp\PresentationLayerWeb\bin
 Shared/obj/
-packages/
-*/obj
