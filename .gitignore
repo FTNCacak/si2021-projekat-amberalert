@@ -1,10 +1,10 @@
 .vs/
 AmberAlertApp/packages
-AmberAlertApp\AmberAlertBusiness\obj
-AmberAlertApp\DataAccessLayer\obj
-AmberAlertApp\PresentationLayer\obj
-AmberAlertApp\PresentationLayer\Scripts
-AmberAlertApp\PresentationLayerWeb\obj
-AmberAlertApp\PresentationLayerWeb\Scripts
-AmberAlertApp\PresentationLayerWeb\bin
+AmberAlertApp/AmberAlertBusiness/obj
+AmberAlertApp/DataAccessLayer/obj
+AmberAlertApp/PresentationLayer/obj
+AmberAlertApp/PresentationLayer/Scripts
+AmberAlertApp/PresentationLayerWeb/obj
+AmberAlertApp/PresentationLayerWeb/Scripts
+AmberAlertApp/PresentationLayerWeb/bin
 Shared/obj/
