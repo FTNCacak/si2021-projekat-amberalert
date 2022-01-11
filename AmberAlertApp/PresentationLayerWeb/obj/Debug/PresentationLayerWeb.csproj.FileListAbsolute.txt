@@ -72,3 +72,5 @@ C:\Users\LAKI\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLay
 C:\Users\LAKI\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\obj\Debug\PresentationLayerWeb.csproj.CopyComplete
 C:\Users\LAKI\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\obj\Debug\PresentationLayerWeb.dll
 C:\Users\LAKI\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\obj\Debug\PresentationLayerWeb.pdb
+C:\Users\milos\Documents\MEGA\Fakultet\03 - Treca godina\03-01\01 - Softversko inženjerstvo\Projekat\Projektil\AmberAlertApp\PresentationLayerWeb\obj\Debug\PresentationLayerWeb.dll
+C:\Users\milos\Documents\MEGA\Fakultet\03 - Treca godina\03-01\01 - Softversko inženjerstvo\Projekat\Projektil\AmberAlertApp\PresentationLayerWeb\obj\Debug\PresentationLayerWeb.pdb

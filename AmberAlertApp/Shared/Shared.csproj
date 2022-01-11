@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Bussiness\IFindingBusiness.cs" />
+    <Compile Include="Interfaces\Bussiness\IMissingBusiness.cs" />
+    <Compile Include="Interfaces\Bussiness\IPoliceOfficerBusiness.cs" />
     <Compile Include="Interfaces\Repository\IFindingRepository.cs" />
     <Compile Include="Interfaces\Repository\IMissingRepository.cs" />
     <Compile Include="Interfaces\Repository\IPoliceOfficerRepository.cs" />
@@ -174,5 +177,6 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

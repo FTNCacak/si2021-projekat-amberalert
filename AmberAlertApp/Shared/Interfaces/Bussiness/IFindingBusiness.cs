@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AmberAlertBusiness
+using Shared.Models;
+
+namespace Shared.Interfaces.Business
 {
-    public class Class1
+    public interface IFindingBusiness
     {
+        List<Find> GetFindings();
     }
 }
