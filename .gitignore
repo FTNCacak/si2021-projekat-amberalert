@@ -1,5 +1,5 @@
 .vs/
-AmberAlertApp/packages/
+AmberAlertApp/packages
 AmberAlertBusiness/obj/Debug/MagacinBusiness.csproj.FileListAbsolute.txt
 Shared/obj/
 packages/
