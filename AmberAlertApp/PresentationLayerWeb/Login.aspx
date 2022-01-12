@@ -1,9 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PresentationLayerWeb.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="container" style="text-align:center;>
+    <div class="container" style="text-align:center;">
     <section id="main-content"> 
         <section id="wrapper">
+
 
             <div class="row">
                 <div class="col-lg-12">
@@ -15,8 +16,10 @@
                         </header>
 
 
-                        <div class="panel-body" style="border:30px solid #444; display: grid; justify-items:center; align-items:center; background-color:#c7dcff">
-                            
+                        <div class="panel-body" style="border:30px solid #444; display: grid; justify-items:center; align-items:center; background-color:#c7dcff;">
+                        <img src="img/Police_Badge_01.png" class="rounded float-left my-2" alt="Police Badge" width="250" height="250">
+
+
                             <div class="row">
                                 <div class="col-md-12 col-md-offset-1 pb-2">
                                     <div class="form-group" style="font-weight:650;">
@@ -44,7 +47,7 @@
                             </div>
 
                                <div class="row">
-                                <div class="col-md-12 col-md-offset-1 pb-2">
+                                <div class="col-md-12 col-md-offset-1 pb-4">
                                     <asp:Button runat="server" Text="Log in" ID="btnlogin" CssClass="btn btn-success" Width="200px" />
                                 </div>
                             </div>
