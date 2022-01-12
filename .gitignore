@@ -15,3 +15,5 @@ AmberAlertApp/Shared/obj/
 *.config
 *.suo
 AmberAlertApp/.vs/AmberAlertApp/v16/.suo
+AmberAlertApp/AmberAlertBusinessTest/obj
+AmberAlertApp/AmberAlertBusinessTest/bin
