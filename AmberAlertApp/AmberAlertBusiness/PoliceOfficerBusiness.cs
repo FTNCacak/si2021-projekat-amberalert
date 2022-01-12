@@ -10,6 +10,7 @@ using Shared.Models;
 
 namespace AmberAlertBusiness
 {
+    //Sadrži funkcije za održavanje baze policajaca
     public class PoliceOfficerBusiness : IPoliceOfficerBusiness
     {
         private readonly IPoliceOfficerRepository policeRepository;

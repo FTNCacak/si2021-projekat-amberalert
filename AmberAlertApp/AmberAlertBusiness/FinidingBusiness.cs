@@ -10,6 +10,7 @@ using Shared.Models;
 
 namespace AmberAlertBusiness
 {
+    //Sadrži funkcije za održavanje tabele pronađenih lica
     public class FinidingBusiness : IFindingBusiness
     {
 

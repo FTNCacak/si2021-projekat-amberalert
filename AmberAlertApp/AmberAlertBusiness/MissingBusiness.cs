@@ -10,6 +10,7 @@ using Shared.Models;
 
 namespace AmberAlertBusiness
 {
+    //Sadrži funkcije za održavanje baze nestalih osoba
     public class MissingBusiness : IMissingBusiness
     {
         private readonly IMissingRepository missingRepository;
