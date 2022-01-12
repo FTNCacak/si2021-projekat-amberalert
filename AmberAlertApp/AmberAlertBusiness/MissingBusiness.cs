@@ -38,7 +38,7 @@ namespace AmberAlertBusiness
 
         public List<Missing> MissingByName(String firstName)
         {
-            return MissingAll().Where(person => person.FirstName == firstName).ToList();
+            return MissingAll().Where(person => person.FirstName.Contains(firstName)).ToList();
         }
     }
 }
