@@ -9,7 +9,7 @@ using Shared.Models;
 
 namespace DataAccessLayer
 {
-    class FindingRepository : IFindingRepository
+    public class FindingRepository : IFindingRepository
     {
         private string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AmberAlertDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
