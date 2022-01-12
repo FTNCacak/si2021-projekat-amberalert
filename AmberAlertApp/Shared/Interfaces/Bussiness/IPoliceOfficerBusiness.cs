@@ -10,7 +10,8 @@ namespace Shared.Interfaces.Business
 {
     public interface IPoliceOfficerBusiness
     {
-        PoliceOfficer PoliceIn(PoliceOfficer officer);
-        int PoliceDel(int officerBadge);
+        
+        String PoliceIn(PoliceOfficer officer);
+        String PoliceDel(int officerBadge);
     }
 }

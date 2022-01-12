@@ -10,8 +10,9 @@ namespace Shared.Interfaces.Business
 {
     public interface IMissingBusiness
     {
-        Missing MissingIn(Missing person);
-        int MissingDel(int personId);
+        String MissingIn(Missing person);
+        String MissingDel(int personId);
+        List<Missing> MissingByName(String firstName);
         List<Missing> MissingAll();
     }
 }

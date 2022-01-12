@@ -11,5 +11,6 @@ namespace Shared.Interfaces.Repository
     {
         List<Missing> GetAllMissing();
         int InsertMissing(Missing m);
+        int DeleteMissing(int missID);
     }
 }
