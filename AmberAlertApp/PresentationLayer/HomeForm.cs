@@ -16,5 +16,27 @@ namespace PresentationLayer
         {
             InitializeComponent();
         }
+
+        private void ExitHome_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonAddMissing_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MissingRegistrationForm().Show();
+        }
+
+        private void buttonMissingSearch_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new SearchFindings().Show();
+        }
+
+        private void HomeBackground_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
