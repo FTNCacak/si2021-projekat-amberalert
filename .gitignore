@@ -12,3 +12,5 @@ AmberAlertApp/PresentationLayerWeb/bin/
 AmberAlertApp/PresentationLayerWeb/obj/
 AmberAlertApp/Shared/obj/
 *.cache
+*.config
+*.suo
