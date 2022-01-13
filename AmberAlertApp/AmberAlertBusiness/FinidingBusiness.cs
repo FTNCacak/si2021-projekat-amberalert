@@ -21,6 +21,10 @@ namespace AmberAlertBusiness
             findingRepository = _findings;
         }
 
+        public FinidingBusiness()
+        {
+        }
+
         public List<Find> GetFindings()
         {
             return this.findingRepository.GetAllFinding();
