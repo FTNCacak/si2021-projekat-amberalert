@@ -32,7 +32,7 @@ namespace AmberAlertBusiness
 
             return rowsAffected > 0 ? "Uspešno ste obrisali nestalu osobu" : "Došlo je od greške, probajte ponovo.";
         }
-        public List<PoliceOfficer> MissingAll()
+        public List<PoliceOfficer> PoliceAll()
         {
             return this.policeRepository.GetAllPoliceOfficers();
         }
