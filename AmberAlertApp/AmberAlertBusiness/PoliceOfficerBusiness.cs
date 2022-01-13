@@ -20,6 +20,10 @@ namespace AmberAlertBusiness
             policeRepository = _officer;
         }
 
+        public PoliceOfficerBusiness()
+        {
+        }
+
         public String PoliceIn(PoliceOfficer officer)
         {
             int rowsAffected = this.policeRepository.InsertPoliceOfficers(officer);
