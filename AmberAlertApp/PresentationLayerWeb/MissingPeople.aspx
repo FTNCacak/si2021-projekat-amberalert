@@ -22,11 +22,11 @@
                         <img src="img/logo.png" class="rounded float-left my-2" alt="Amber Alert logo" width="100" height="75">
                         <img src="img/AmberAlert.png" class="img-thumbnail my-3" alt="Amber Alert" >
                             <asp:Label Text="Lista Nestalih ljudi" runat="server" style="font-size: 30px; color:white; font-weight:500;"/>
-                            <asp:ListBox ID="ListBox1" runat="server" Height="275px" Width ="300px"></asp:ListBox>
+                            <asp:ListBox ID="ListBoxMissingPeople" runat="server" Height="275px" Width ="300px" OnSelectedIndexChanged="ListBoxMissingPeople_SelectedIndexChanged"></asp:ListBox>
 
                                <div class="row">
                                 <div class="col-md-12 col-md-offset-1 my-3 pb-2">
-                                    <asp:Button runat="server" Text="Get All Missing People" ID="btnget" CssClass="btn btn-info" Width="200px" />
+                                    <asp:Button runat="server" Text="Get All Missing People" ID="btnget" CssClass="btn btn-info" Width="200px" OnClick="btnget_Click" />
                                 </div>
                                    <div class="col-md-12 col-md-offset-1 pb-4">
                                     <asp:Button runat="server" Text="Delete" ID="btndelete" CssClass="btn btn-danger" Width="200px" />
