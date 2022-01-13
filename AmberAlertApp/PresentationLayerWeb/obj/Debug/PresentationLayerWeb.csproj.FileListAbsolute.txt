@@ -76,3 +76,9 @@ C:\Users\milos\Documents\MEGA\Fakultet\03 - Treca godina\03-01\01 - Softversko i
 C:\Users\milos\Documents\MEGA\Fakultet\03 - Treca godina\03-01\01 - Softversko inženjerstvo\Projekat\Projektil\AmberAlertApp\PresentationLayerWeb\obj\Debug\PresentationLayerWeb.pdb
 C:\Users\Ilija Ilic\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\obj\Debug\PresentationLayerWeb.dll
 C:\Users\Ilija Ilic\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\obj\Debug\PresentationLayerWeb.pdb
+C:\Users\Laki\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\bin\AmberAlertBusiness.dll
+C:\Users\Laki\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\bin\Shared.dll
+C:\Users\Laki\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\bin\AmberAlertBusiness.pdb
+C:\Users\Laki\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\bin\Shared.pdb
+C:\Users\Laki\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\bin\DataAccessLayer.dll
+C:\Users\Laki\Documents\si2021-projekat-amberalert\AmberAlertApp\PresentationLayerWeb\bin\DataAccessLayer.pdb
