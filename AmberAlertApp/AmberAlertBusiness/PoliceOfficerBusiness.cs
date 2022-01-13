@@ -35,8 +35,13 @@ namespace AmberAlertBusiness
             int rowsAffected = this.policeRepository.DeletePoliceOfficer(badgeNo);
 
             return rowsAffected > 0 ? "Uspešno ste obrisali nestalu osobu" : "Došlo je od greške, probajte ponovo.";
+<<<<<<< HEAD
         }*/
         public List<PoliceOfficer> GetAllPoliceOfficers()
+=======
+        }
+        public List<PoliceOfficer> PoliceAll()
+>>>>>>> Business-test
         {
             return this.policeRepository.GetAllPoliceOfficers();
         }
