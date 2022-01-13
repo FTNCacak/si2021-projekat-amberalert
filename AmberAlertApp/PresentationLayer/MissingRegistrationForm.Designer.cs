@@ -30,30 +30,31 @@ namespace PresentationLayer
         private void InitializeComponent()
         {
             this.groupBox = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxMissingName = new System.Windows.Forms.TextBox();
-            this.textBoxMissingSurname = new System.Windows.Forms.TextBox();
-            this.textBoxMissingJMBG = new System.Windows.Forms.TextBox();
-            this.dateTimePickerMissingDateOfBirth = new System.Windows.Forms.DateTimePicker();
-            this.textBoxMissingAddress = new System.Windows.Forms.TextBox();
-            this.textBoxMissingGender = new System.Windows.Forms.TextBox();
-            this.dateTimePickerMissingDate = new System.Windows.Forms.DateTimePicker();
             this.checkBoxMissingPhoto = new System.Windows.Forms.CheckBox();
+            this.dateTimePickerMissingDate = new System.Windows.Forms.DateTimePicker();
+            this.textBoxMissingGender = new System.Windows.Forms.TextBox();
+            this.textBoxMissingAddress = new System.Windows.Forms.TextBox();
+            this.dateTimePickerMissingDateOfBirth = new System.Windows.Forms.DateTimePicker();
+            this.textBoxMissingJMBG = new System.Windows.Forms.TextBox();
+            this.textBoxMissingSurname = new System.Windows.Forms.TextBox();
+            this.textBoxMissingName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listBoxMissing = new System.Windows.Forms.ListBox();
             this.buttonMissingAdd = new System.Windows.Forms.Button();
             this.buttonMissingUpdate = new System.Windows.Forms.Button();
             this.buttonMissingDelete = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox
@@ -82,127 +83,24 @@ namespace PresentationLayer
             this.groupBox.TabStop = false;
             this.groupBox.Text = "REGISTRACIJA NESTALE OSOBE";
             // 
-            // label1
+            // checkBoxMissingPhoto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ime:";
+            this.checkBoxMissingPhoto.AutoSize = true;
+            this.checkBoxMissingPhoto.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMissingPhoto.Location = new System.Drawing.Point(35, 545);
+            this.checkBoxMissingPhoto.Name = "checkBoxMissingPhoto";
+            this.checkBoxMissingPhoto.Size = new System.Drawing.Size(128, 33);
+            this.checkBoxMissingPhoto.TabIndex = 14;
+            this.checkBoxMissingPhoto.Text = "Fotografija";
+            this.checkBoxMissingPhoto.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // dateTimePickerMissingDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Prezime:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 144);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "JMBG:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 196);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 29);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Datum rođenja:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 332);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 29);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Adresa:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 377);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 29);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Pol:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(30, 420);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(228, 29);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Datum i vreme nestanka:";
-            // 
-            // textBoxMissingName
-            // 
-            this.textBoxMissingName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.textBoxMissingName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMissingName.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMissingName.ForeColor = System.Drawing.Color.White;
-            this.textBoxMissingName.Location = new System.Drawing.Point(209, 54);
-            this.textBoxMissingName.Name = "textBoxMissingName";
-            this.textBoxMissingName.Size = new System.Drawing.Size(214, 34);
-            this.textBoxMissingName.TabIndex = 7;
-            // 
-            // textBoxMissingSurname
-            // 
-            this.textBoxMissingSurname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.textBoxMissingSurname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMissingSurname.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMissingSurname.ForeColor = System.Drawing.Color.White;
-            this.textBoxMissingSurname.Location = new System.Drawing.Point(209, 99);
-            this.textBoxMissingSurname.Name = "textBoxMissingSurname";
-            this.textBoxMissingSurname.Size = new System.Drawing.Size(214, 34);
-            this.textBoxMissingSurname.TabIndex = 8;
-            // 
-            // textBoxMissingJMBG
-            // 
-            this.textBoxMissingJMBG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.textBoxMissingJMBG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMissingJMBG.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMissingJMBG.ForeColor = System.Drawing.Color.White;
-            this.textBoxMissingJMBG.Location = new System.Drawing.Point(209, 144);
-            this.textBoxMissingJMBG.Name = "textBoxMissingJMBG";
-            this.textBoxMissingJMBG.Size = new System.Drawing.Size(214, 34);
-            this.textBoxMissingJMBG.TabIndex = 9;
-            // 
-            // dateTimePickerMissingDateOfBirth
-            // 
-            this.dateTimePickerMissingDateOfBirth.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerMissingDateOfBirth.Location = new System.Drawing.Point(38, 245);
-            this.dateTimePickerMissingDateOfBirth.Name = "dateTimePickerMissingDateOfBirth";
-            this.dateTimePickerMissingDateOfBirth.Size = new System.Drawing.Size(297, 30);
-            this.dateTimePickerMissingDateOfBirth.TabIndex = 10;
-            // 
-            // textBoxMissingAddress
-            // 
-            this.textBoxMissingAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.textBoxMissingAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMissingAddress.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMissingAddress.ForeColor = System.Drawing.Color.White;
-            this.textBoxMissingAddress.Location = new System.Drawing.Point(197, 327);
-            this.textBoxMissingAddress.Name = "textBoxMissingAddress";
-            this.textBoxMissingAddress.Size = new System.Drawing.Size(214, 34);
-            this.textBoxMissingAddress.TabIndex = 11;
+            this.dateTimePickerMissingDate.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerMissingDate.Location = new System.Drawing.Point(38, 474);
+            this.dateTimePickerMissingDate.Name = "dateTimePickerMissingDate";
+            this.dateTimePickerMissingDate.Size = new System.Drawing.Size(297, 30);
+            this.dateTimePickerMissingDate.TabIndex = 13;
             // 
             // textBoxMissingGender
             // 
@@ -215,46 +113,137 @@ namespace PresentationLayer
             this.textBoxMissingGender.Size = new System.Drawing.Size(214, 34);
             this.textBoxMissingGender.TabIndex = 12;
             // 
-            // dateTimePickerMissingDate
+            // textBoxMissingAddress
             // 
-            this.dateTimePickerMissingDate.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerMissingDate.Location = new System.Drawing.Point(38, 474);
-            this.dateTimePickerMissingDate.Name = "dateTimePickerMissingDate";
-            this.dateTimePickerMissingDate.Size = new System.Drawing.Size(297, 30);
-            this.dateTimePickerMissingDate.TabIndex = 13;
+            this.textBoxMissingAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.textBoxMissingAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxMissingAddress.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMissingAddress.ForeColor = System.Drawing.Color.White;
+            this.textBoxMissingAddress.Location = new System.Drawing.Point(197, 327);
+            this.textBoxMissingAddress.Name = "textBoxMissingAddress";
+            this.textBoxMissingAddress.Size = new System.Drawing.Size(214, 34);
+            this.textBoxMissingAddress.TabIndex = 11;
             // 
-            // checkBoxMissingPhoto
+            // dateTimePickerMissingDateOfBirth
             // 
-            this.checkBoxMissingPhoto.AutoSize = true;
-            this.checkBoxMissingPhoto.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMissingPhoto.Location = new System.Drawing.Point(35, 545);
-            this.checkBoxMissingPhoto.Name = "checkBoxMissingPhoto";
-            this.checkBoxMissingPhoto.Size = new System.Drawing.Size(128, 33);
-            this.checkBoxMissingPhoto.TabIndex = 14;
-            this.checkBoxMissingPhoto.Text = "Fotografija";
-            this.checkBoxMissingPhoto.UseVisualStyleBackColor = true;
+            this.dateTimePickerMissingDateOfBirth.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerMissingDateOfBirth.Location = new System.Drawing.Point(38, 245);
+            this.dateTimePickerMissingDateOfBirth.Name = "dateTimePickerMissingDateOfBirth";
+            this.dateTimePickerMissingDateOfBirth.Size = new System.Drawing.Size(297, 30);
+            this.dateTimePickerMissingDateOfBirth.TabIndex = 10;
+            // 
+            // textBoxMissingJMBG
+            // 
+            this.textBoxMissingJMBG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.textBoxMissingJMBG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxMissingJMBG.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMissingJMBG.ForeColor = System.Drawing.Color.White;
+            this.textBoxMissingJMBG.Location = new System.Drawing.Point(209, 144);
+            this.textBoxMissingJMBG.Name = "textBoxMissingJMBG";
+            this.textBoxMissingJMBG.Size = new System.Drawing.Size(214, 34);
+            this.textBoxMissingJMBG.TabIndex = 9;
+            // 
+            // textBoxMissingSurname
+            // 
+            this.textBoxMissingSurname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.textBoxMissingSurname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxMissingSurname.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMissingSurname.ForeColor = System.Drawing.Color.White;
+            this.textBoxMissingSurname.Location = new System.Drawing.Point(209, 99);
+            this.textBoxMissingSurname.Name = "textBoxMissingSurname";
+            this.textBoxMissingSurname.Size = new System.Drawing.Size(214, 34);
+            this.textBoxMissingSurname.TabIndex = 8;
+            // 
+            // textBoxMissingName
+            // 
+            this.textBoxMissingName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.textBoxMissingName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxMissingName.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMissingName.ForeColor = System.Drawing.Color.White;
+            this.textBoxMissingName.Location = new System.Drawing.Point(209, 54);
+            this.textBoxMissingName.Name = "textBoxMissingName";
+            this.textBoxMissingName.Size = new System.Drawing.Size(214, 34);
+            this.textBoxMissingName.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(30, 420);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(228, 29);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Datum i vreme nestanka:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(33, 377);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 29);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Pol:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 332);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 29);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Adresa:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(30, 196);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 29);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Datum rođenja:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 144);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 29);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "JMBG:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(30, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 29);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Prezime:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(30, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ime:";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listBoxMissing);
+            this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(515, 39);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(613, 483);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            // 
-            // listBoxMissing
-            // 
-            this.listBoxMissing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.listBoxMissing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBoxMissing.ForeColor = System.Drawing.Color.White;
-            this.listBoxMissing.FormattingEnabled = true;
-            this.listBoxMissing.ItemHeight = 27;
-            this.listBoxMissing.Location = new System.Drawing.Point(7, 30);
-            this.listBoxMissing.Name = "listBoxMissing";
-            this.listBoxMissing.Size = new System.Drawing.Size(600, 434);
-            this.listBoxMissing.TabIndex = 0;
             // 
             // buttonMissingAdd
             // 
@@ -270,6 +259,7 @@ namespace PresentationLayer
             this.buttonMissingAdd.TabIndex = 2;
             this.buttonMissingAdd.Text = "SAČUVAJ";
             this.buttonMissingAdd.UseVisualStyleBackColor = true;
+            this.buttonMissingAdd.Click += new System.EventHandler(this.buttonMissingAdd_Click);
             // 
             // buttonMissingUpdate
             // 
@@ -283,8 +273,9 @@ namespace PresentationLayer
             this.buttonMissingUpdate.Name = "buttonMissingUpdate";
             this.buttonMissingUpdate.Size = new System.Drawing.Size(185, 56);
             this.buttonMissingUpdate.TabIndex = 3;
-            this.buttonMissingUpdate.Text = "SAČUVAJ";
+            this.buttonMissingUpdate.Text = "IZMENI";
             this.buttonMissingUpdate.UseVisualStyleBackColor = true;
+            this.buttonMissingUpdate.Click += new System.EventHandler(this.buttonMissingUpdate_Click);
             // 
             // buttonMissingDelete
             // 
@@ -298,8 +289,9 @@ namespace PresentationLayer
             this.buttonMissingDelete.Name = "buttonMissingDelete";
             this.buttonMissingDelete.Size = new System.Drawing.Size(185, 56);
             this.buttonMissingDelete.TabIndex = 4;
-            this.buttonMissingDelete.Text = "SAČUVAJ";
+            this.buttonMissingDelete.Text = "OBRIŠI";
             this.buttonMissingDelete.UseVisualStyleBackColor = true;
+            this.buttonMissingDelete.Click += new System.EventHandler(this.buttonMissingDelete_Click);
             // 
             // label8
             // 
@@ -323,6 +315,17 @@ namespace PresentationLayer
             this.label9.Text = "Exit";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 24);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(597, 453);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // MissingRegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -339,9 +342,11 @@ namespace PresentationLayer
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MissingRegistrationForm";
             this.Text = "MissingRegistrationForm";
+            this.Load += new System.EventHandler(this.MissingRegistrationForm_Load);
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,11 +371,11 @@ namespace PresentationLayer
         private System.Windows.Forms.TextBox textBoxMissingSurname;
         private System.Windows.Forms.CheckBox checkBoxMissingPhoto;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox listBoxMissing;
         private System.Windows.Forms.Button buttonMissingAdd;
         private System.Windows.Forms.Button buttonMissingUpdate;
         private System.Windows.Forms.Button buttonMissingDelete;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

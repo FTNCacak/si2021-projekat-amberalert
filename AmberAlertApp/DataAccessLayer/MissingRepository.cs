@@ -77,7 +77,7 @@ namespace DataAccessLayer
             }
 
         }
-        public int DeleteMissing(Missing m)
+     public int DeleteMissing(Missing m)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connString))
             {

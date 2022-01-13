@@ -20,18 +20,22 @@ namespace AmberAlertBusiness
             missingRepository = _missings;
         }
 
+        public MissingBusiness()
+        {
+        }
+
         public String MissingIn(Missing person)
         {
             int rowsAffected = this.missingRepository.InsertMissing(person);
 
             return rowsAffected > 0 ? "Uspešno ste uneli nestalu osobu" : "Došlo je od greške, probajte ponovo.";
         }
-        public String MissingDel(int personId)
+       /* public String MissingDel(int personId)
         {
             int rowsAffected = this.missingRepository.DeleteMissing(personId);
 
             return rowsAffected > 0 ? "Uspešno ste obrisali nestalu osobu" : "Došlo je od greške, probajte ponovo.";
-        }
+        }*/
         public List<Missing> MissingAll()
         {
             return this.missingRepository.GetAllMissing();
