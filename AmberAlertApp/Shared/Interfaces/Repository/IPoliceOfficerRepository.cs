@@ -12,7 +12,8 @@ namespace Shared.Interfaces.Repository
         List<PoliceOfficer> GetAllPoliceOfficers();
 
         int InsertPoliceOfficers(PoliceOfficer p);
-        int DeletePoliceOfficer(int badgeNo);
+
+        /*int DeletePoliceOfficer(int badgeNo);*/
 
     }
 }

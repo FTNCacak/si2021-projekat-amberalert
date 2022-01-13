@@ -26,13 +26,13 @@ namespace AmberAlertBusiness
 
             return rowsAffected > 0 ? "Uspešno ste uneli novog službenika" : "Došlo je od greške, probajte ponovo.";
         }
-        public String PoliceDel(int badgeNo)
+        /*public String PoliceDel(int badgeNo)
         {
             int rowsAffected = this.policeRepository.DeletePoliceOfficer(badgeNo);
 
             return rowsAffected > 0 ? "Uspešno ste obrisali nestalu osobu" : "Došlo je od greške, probajte ponovo.";
-        }
-        public List<PoliceOfficer> MissingAll()
+        }*/
+        public List<PoliceOfficer> GetAllPoliceOfficers()
         {
             return this.policeRepository.GetAllPoliceOfficers();
         }

@@ -11,5 +11,6 @@ namespace Shared.Interfaces.Business
     public interface IFindingBusiness
     {
         List<Find> GetFindings();
+        String FindingsIn(Find f);
     }
 }

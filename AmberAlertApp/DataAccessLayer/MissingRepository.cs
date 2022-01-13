@@ -60,5 +60,37 @@ namespace DataAccessLayer
                 return sqlCommand.ExecuteNonQuery();
             }
         }
+
+        public int UpdateMissing(Missing m)
+        {
+
+            using (SqlConnection sqlConnection = new SqlConnection(connString))
+            {
+                sqlConnection.Open();
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("UPDATE MissingPeople SET FirstName='{0}', SurName='{1}', JMBG={2}, DateOfBirth={3}, Address={4},Gender={5},DateOfDisappearance={6},ImageOfPerson={7}" +
+                    "WHERE IdMiss={2}", m.FirstName, m.SurName, m.JMBG, m.DateOfBirth, m.Address, m.Gender, m.DateOfDisappearance, m.ImageOfPerson);
+
+                return command.ExecuteNonQuery();
+
+            }
+
+        }
+        public int DeleteMissing(Missing m)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connString))
+            {
+                {
+                    sqlConnection.Open();
+
+                    SqlCommand command = new SqlCommand();
+                    command.Connection = sqlConnection;
+                    command.CommandText = string.Format("DELETE FROM MissingPeople WHERE IdMiss = {0}", m.IdMiss);
+
+                    return command.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

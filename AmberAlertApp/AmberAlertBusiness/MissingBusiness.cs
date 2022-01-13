@@ -41,5 +41,29 @@ namespace AmberAlertBusiness
         {
             return MissingAll().Where(person => person.FirstName.Contains(firstName)).ToList();
         }
+
+        /*public bool DeleteMissing(Missing m)
+        {
+            if (this.missingRepository.DeleteMissing(m) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }*/
+
+        /*  public bool UpdateMissing(Missing m)
+        {
+            if (this.missingRepository.UpdateMissing(m) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }*/
     }
 }

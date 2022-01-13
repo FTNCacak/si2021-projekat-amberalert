@@ -25,5 +25,12 @@ namespace AmberAlertBusiness
         {
             return this.findingRepository.GetAllFinding();
         }
+
+        public String FindingsIn(Find f)
+        {
+            int rowsAffected = this.findingRepository.InsertFinding(f);
+
+            return rowsAffected > 0 ? "Uspešno ste uneli nestalu osobu" : "Došlo je od greške, probajte ponovo.";
+        }
     }
 }
