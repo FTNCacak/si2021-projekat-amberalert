@@ -49,7 +49,7 @@ namespace PresentationLayerWeb
             ListBoxMissingPeople.Items.Clear();
             foreach (Missing m in missings)
             {
-                ListBoxMissingPeople.Items.Add(string.Format("{0}. {1} - {2} - {4} - {5} : {6} --- {7} {8}",m.IdMiss, m.FirstName, m.SurName,  m.DateOfBirth, m.Address, m.Gender, m.DateOfDisappearance, m.ImageOfPerson));
+                ListBoxMissingPeople.Items.Add(string.Format("{0}. {1},{2}, nestao:{3}",m.IdMiss, m.FirstName, m.SurName, m.DateOfDisappearance));
             }
         }
 

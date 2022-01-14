@@ -130,7 +130,7 @@ namespace PresentationLayer
 
         private void buttonMissingDelete_Click(object sender, EventArgs e)
         {
-            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" || textBoxMissingJMBG.Text == "" || dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
+            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" || dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
             {
                 MessageBox.Show("Da biste obrisali podatke o osobi morate selektovati osobu!");
 
