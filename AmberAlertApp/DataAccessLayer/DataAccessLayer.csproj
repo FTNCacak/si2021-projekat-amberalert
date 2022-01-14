@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Finding.cs" />
+    <Compile Include="FindingRepository.cs" />
     <Compile Include="MissingRepository.cs" />
     <Compile Include="PoliceOfficerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

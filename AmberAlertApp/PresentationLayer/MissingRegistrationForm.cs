@@ -38,29 +38,24 @@ namespace PresentationLayer
         {
             selektor = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
             textBoxMissingName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBoxMissingSurname.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBoxMissingJMBG.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBoxMissingSurname.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            
             dateTimePickerMissingDateOfBirth.Value = DateTime.Now;
-            textBoxMissingAddress.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBoxMissingGender.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBoxMissingAddress.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            textBoxMissingGender.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             dateTimePickerMissingDate.Value = DateTime.Now;
             checkBoxMissingPhoto.Checked = false;
         }
 
         private void buttonMissingAdd_Click(object sender, EventArgs e)
         {
-            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" || textBoxMissingJMBG.Text == "" || dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
+            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" ||  dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
             {
                 MessageBox.Show("Da biste sačuvali podatke morate popuniti prazna polja!");
 
             }
 
-            if (!Regex.Match(textBoxMissingJMBG.Text, @"^\d{13}$").Success)
-            {
-                MessageBox.Show("JMBG mora imati 13 karaktera!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBoxMissingJMBG.Focus();
-                return;
-            }
+           
 
 
 
@@ -70,7 +65,7 @@ namespace PresentationLayer
 
                 m.FirstName = textBoxMissingName.Text;
                 m.SurName = textBoxMissingSurname.Text;
-                m.JMBG = Convert.ToInt32(textBoxMissingJMBG.Text);
+                
                 m.DateOfBirth = dateTimePickerMissingDateOfBirth.Value;
                 m.Address = textBoxMissingAddress.Text;
                 m.Gender = textBoxMissingGender.Text;
@@ -85,7 +80,7 @@ namespace PresentationLayer
 
                 textBoxMissingName.Text = "";
                 textBoxMissingSurname.Text = "";
-                textBoxMissingJMBG.Text = "";
+                
                 dateTimePickerMissingDateOfBirth.Value = DateTime.Now;
                 textBoxMissingAddress.Text = "";
                 textBoxMissingGender.Text = "";
@@ -96,17 +91,10 @@ namespace PresentationLayer
 
         private void buttonMissingUpdate_Click(object sender, EventArgs e)
         {
-            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" || textBoxMissingJMBG.Text == "" || dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
+            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == ""  || dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
             {
                 MessageBox.Show("Da biste izmenili podatke morate popuniti prazna polja!");
 
-            }
-
-            if (!Regex.Match(textBoxMissingJMBG.Text, @"^\d{13}$").Success)
-            {
-                MessageBox.Show("JMBG mora imati 13 karaktera!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBoxMissingJMBG.Focus();
-                return;
             }
 
 
@@ -117,7 +105,7 @@ namespace PresentationLayer
 
                 m.FirstName = textBoxMissingName.Text;
                 m.SurName = textBoxMissingSurname.Text;
-                m.JMBG = Convert.ToInt32(textBoxMissingJMBG.Text);
+                
                 m.DateOfBirth = dateTimePickerMissingDateOfBirth.Value;
                 m.Address = textBoxMissingAddress.Text;
                 m.Gender = textBoxMissingGender.Text;
@@ -131,7 +119,7 @@ namespace PresentationLayer
 
                 textBoxMissingName.Text = "";
                 textBoxMissingSurname.Text = "";
-                textBoxMissingJMBG.Text = "";
+                
                 dateTimePickerMissingDateOfBirth.Value = DateTime.Now;
                 textBoxMissingAddress.Text = "";
                 textBoxMissingGender.Text = "";
@@ -148,12 +136,7 @@ namespace PresentationLayer
 
             }
 
-            if (!Regex.Match(textBoxMissingJMBG.Text, @"^\d{13}$").Success)
-            {
-                MessageBox.Show("JMBG mora imati 13 karaktera!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBoxMissingJMBG.Focus();
-                return;
-            }
+            
 
 
 
@@ -163,7 +146,7 @@ namespace PresentationLayer
 
                 m.FirstName = textBoxMissingName.Text;
                 m.SurName = textBoxMissingSurname.Text;
-                m.JMBG = Convert.ToInt32(textBoxMissingJMBG.Text);
+                
                 m.DateOfBirth = dateTimePickerMissingDateOfBirth.Value;
                 m.Address = textBoxMissingAddress.Text;
                 m.Gender = textBoxMissingGender.Text;
@@ -177,7 +160,7 @@ namespace PresentationLayer
 
                 textBoxMissingName.Text = "";
                 textBoxMissingSurname.Text = "";
-                textBoxMissingJMBG.Text = "";
+                
                 dateTimePickerMissingDateOfBirth.Value = DateTime.Now;
                 textBoxMissingAddress.Text = "";
                 textBoxMissingGender.Text = "";

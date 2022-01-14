@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Shared.Interfaces.Business;
 using Shared.Interfaces.Repository;
 using Shared.Models;
+using DataAccessLayer;
+
 
 namespace AmberAlertBusiness
 {
