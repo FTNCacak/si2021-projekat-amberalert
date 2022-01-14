@@ -35,23 +35,21 @@ namespace PresentationLayer
             this.textBoxMissingGender = new System.Windows.Forms.TextBox();
             this.textBoxMissingAddress = new System.Windows.Forms.TextBox();
             this.dateTimePickerMissingDateOfBirth = new System.Windows.Forms.DateTimePicker();
-            this.textBoxMissingJMBG = new System.Windows.Forms.TextBox();
             this.textBoxMissingSurname = new System.Windows.Forms.TextBox();
             this.textBoxMissingName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonMissingAdd = new System.Windows.Forms.Button();
             this.buttonMissingUpdate = new System.Windows.Forms.Button();
             this.buttonMissingDelete = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -64,14 +62,12 @@ namespace PresentationLayer
             this.groupBox.Controls.Add(this.textBoxMissingGender);
             this.groupBox.Controls.Add(this.textBoxMissingAddress);
             this.groupBox.Controls.Add(this.dateTimePickerMissingDateOfBirth);
-            this.groupBox.Controls.Add(this.textBoxMissingJMBG);
             this.groupBox.Controls.Add(this.textBoxMissingSurname);
             this.groupBox.Controls.Add(this.textBoxMissingName);
             this.groupBox.Controls.Add(this.label7);
             this.groupBox.Controls.Add(this.label6);
             this.groupBox.Controls.Add(this.label5);
             this.groupBox.Controls.Add(this.label4);
-            this.groupBox.Controls.Add(this.label3);
             this.groupBox.Controls.Add(this.label2);
             this.groupBox.Controls.Add(this.label1);
             this.groupBox.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,17 +127,6 @@ namespace PresentationLayer
             this.dateTimePickerMissingDateOfBirth.Name = "dateTimePickerMissingDateOfBirth";
             this.dateTimePickerMissingDateOfBirth.Size = new System.Drawing.Size(297, 30);
             this.dateTimePickerMissingDateOfBirth.TabIndex = 10;
-            // 
-            // textBoxMissingJMBG
-            // 
-            this.textBoxMissingJMBG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.textBoxMissingJMBG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMissingJMBG.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMissingJMBG.ForeColor = System.Drawing.Color.White;
-            this.textBoxMissingJMBG.Location = new System.Drawing.Point(209, 144);
-            this.textBoxMissingJMBG.Name = "textBoxMissingJMBG";
-            this.textBoxMissingJMBG.Size = new System.Drawing.Size(214, 34);
-            this.textBoxMissingJMBG.TabIndex = 9;
             // 
             // textBoxMissingSurname
             // 
@@ -205,16 +190,6 @@ namespace PresentationLayer
             this.label4.TabIndex = 3;
             this.label4.Text = "Datum rođenja:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 144);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "JMBG:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -244,6 +219,17 @@ namespace PresentationLayer
             this.groupBox1.Size = new System.Drawing.Size(613, 483);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 24);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(597, 453);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // buttonMissingAdd
             // 
@@ -315,17 +301,6 @@ namespace PresentationLayer
             this.label9.Text = "Exit";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(597, 453);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // MissingRegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -360,14 +335,12 @@ namespace PresentationLayer
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePickerMissingDate;
         private System.Windows.Forms.TextBox textBoxMissingGender;
         private System.Windows.Forms.TextBox textBoxMissingAddress;
         private System.Windows.Forms.DateTimePicker dateTimePickerMissingDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxMissingJMBG;
         private System.Windows.Forms.TextBox textBoxMissingSurname;
         private System.Windows.Forms.CheckBox checkBoxMissingPhoto;
         private System.Windows.Forms.GroupBox groupBox1;

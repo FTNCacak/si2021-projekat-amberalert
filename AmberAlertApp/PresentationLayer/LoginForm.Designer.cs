@@ -115,6 +115,7 @@ namespace PresentationLayer
             this.LoginBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.LoginBackground.TabIndex = 0;
             this.LoginBackground.TabStop = false;
+            this.LoginBackground.Click += new System.EventHandler(this.LoginBackground_Click);
             // 
             // panel1
             // 

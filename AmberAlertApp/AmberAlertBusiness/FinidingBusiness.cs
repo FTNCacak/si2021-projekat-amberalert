@@ -34,7 +34,7 @@ namespace AmberAlertBusiness
         {
             int rowsAffected = this.findingRepository.InsertFinding(f);
 
-            return rowsAffected > 0 ? "Uspešno ste uneli nestalu osobu" : "Došlo je od greške, probajte ponovo.";
+            return rowsAffected > 0 ? "Uspešno ste uneli pronalazak nestale osobe." : "Došlo je od greške, probajte ponovo.";
         }
     }
 }

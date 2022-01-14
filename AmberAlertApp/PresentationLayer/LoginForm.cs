@@ -62,5 +62,10 @@ namespace PresentationLayer
                 }
             }
         }
+
+        private void LoginBackground_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
