@@ -12,21 +12,21 @@ namespace PresentationLayerWeb
 {
     public partial class MissingPeople : System.Web.UI.Page
     {
-        
-         private readonly MissingBusiness missingBusiness;
+
+        private readonly MissingBusiness missingBusiness;
 
         public MissingPeople()
         {
             this.missingBusiness = new MissingBusiness();
         }
-         
+
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-           RefreshData();
-            
+
+            RefreshData();
+
         }
 
         //Button Get All Missing People
@@ -49,7 +49,7 @@ namespace PresentationLayerWeb
             ListBoxMissingPeople.Items.Clear();
             foreach (Missing m in missings)
             {
-                ListBoxMissingPeople.Items.Add(string.Format("{0}. {1},{2}, nestao:{3}",m.IdMiss, m.FirstName, m.SurName, m.DateOfDisappearance));
+                ListBoxMissingPeople.Items.Add(string.Format("{0}. {1},{2}, nestao:{3}", m.IdMiss, m.FirstName, m.SurName, m.DateOfDisappearance));
             }
         }
 
