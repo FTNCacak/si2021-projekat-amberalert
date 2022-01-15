@@ -54,7 +54,7 @@ namespace DataAccessLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = string.Format("INSERT INTO MissingPeople VALUES({0},'{1}','{2}','{3}','{4}','{5}','{6}',{7})", m.IdMiss, m.FirstName, m.SurName,  m.DateOfBirth, m.Address, m.Gender, m.DateOfDisappearance, m.ImageOfPerson);
+                sqlCommand.CommandText = string.Format("INSERT INTO MissingPeople VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", m.FirstName, m.SurName,  m.DateOfBirth, m.Address, m.Gender, m.DateOfDisappearance, m.ImageOfPerson);
 
                 return sqlCommand.ExecuteNonQuery();
             }

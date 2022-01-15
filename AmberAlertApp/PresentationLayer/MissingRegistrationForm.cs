@@ -49,7 +49,7 @@ namespace PresentationLayer
 
         private void buttonMissingAdd_Click(object sender, EventArgs e)
         {
-            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" ||  dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
+            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" ||  dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now)
             {
                 MessageBox.Show("Da biste sačuvali podatke morate popuniti prazna polja!");
 

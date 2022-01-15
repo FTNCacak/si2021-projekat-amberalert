@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[PoliceOfficers] (
+CREATE TABLE [dbo].[PoliceOfficers] (
     [PoliceBadgeNumber]        INT            NOT NULL,
     [FirstName]                NVARCHAR (50)  NOT NULL,
     [SurName]                  NVARCHAR (50)  NOT NULL,
@@ -13,15 +13,15 @@
 
 
 
-INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [UserName], [Password], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (100000, N'Darko', N'Kovacevic', N'Darko123', N'POLICIJA', N'Čačak', N'Director  ', 4440, NULL)
-INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [UserName], [Password], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (334455, N'Marko', N'Dakić', N'Marko123', N'POLICIJA33', N'Uzice', N'Officer   ', 2312, N'CA-123-KK')
-INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [UserName], [Password], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (554255, N'Milan', N'Ković', N'Milan123', N'POLICIJA55', N'Beograd', N'Officer   ', 2345, N'BG-099-JD')
-INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [UserName], [Password], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (994292, N'Ognjen', N'Petković', N'Ognjen123', N'POLICIJA99', N'Čačak', N'Inspector ', 2111, N'CA-324-IR')
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [UserName], [Password], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (100000, N'Darko', N'Kovacevic', N'Darko123', N'POLICIJA', N'Cacak', N'Director  ', 4440, NULL)
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [UserName], [Password], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (334455, N'Marko', N'Dakic', N'Marko123', N'POLICIJA33', N'Uzice', N'Officer   ', 2312, N'CA-123-KK')
+INSERT INTO [dbo].[PoliceOfficers] ([PoliceBadgeNumber], [FirstName], [SurName], [UserName], [Password], [PoliceDepartment], [Job], [PoliceMotorolaNumber], [VehicleRegistrationPlate]) VALUES (554255, N'Milan', N'Kovic', N'Milan123', N'POLICIJA55', N'Beograd', N'Officer   ', 2345, N'BG-099-JD')
+
 
 
 
 CREATE TABLE [dbo].[MissingPeople] (
-    [IdMiss]              INT           NOT NULL,
+    [IdMiss]			  INT           IDENTITY (1, 1) NOT NULL,
     [FirstName]           NVARCHAR (50) NOT NULL,
     [SurName]             NVARCHAR (50) NOT NULL,
     [DateOfBirth]         DATE      NOT NULL,
@@ -32,16 +32,11 @@ CREATE TABLE [dbo].[MissingPeople] (
     PRIMARY KEY CLUSTERED ([IdMiss] ASC)
 );
 
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (1, N'Jovan', N'Dukić', N'2000-04-05 00:00:00', N'Bulevar Revolucije 21, Kragujevac', N'Male', N'2018-09-08 21:00:00', 0)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (2, N'Milos', N'Petrović', N'1993-03-01 00:00:00', N'Kraljice Marije 43, Beograd', N'Male', N'2020-02-04 00:30:00', 1)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (3, N'Katarina', N'Milošević', N'2010-09-10 00:00:00', N'Dimitrija Tucovica 7, Uzice', N'Female', N'2021-10-10 23:45:00', 0)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (4, N'Marija', N'Janković', N'1979-10-03 00:00:00', N'Karadjordjeva 10, Kruševac', N'Female', N'2007-01-12 03:40:00', 0)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (5, N'Vladimir', N'Tepić', N'2015-08-09 00:00:00', N'Ustanica 96, Beograd', N'Male', N'2021-11-01 10:00:00', 0)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (6, N'Uroš', N'Lakić', N'2001-11-26 00:00:00', N'Tanaska Rajica 25, Cacak', N'Male', N'2020-08-05 17:00:00', 1)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (7, N'Milena', N'Veličić', N'2005-03-04 00:00:00', N'Velimira Živojinovica 125, Knin', N'Female', N'2021-05-05 06:35:00', 0)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (8, N'Kristina', N'Urošević', N'2011-07-08 00:00:00', N'Slatina bb, Cacak', N'Female', N'2021-10-02 01:50:00', 0)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (9, N'Goran', N'Bojović', N'1998-12-11 00:00:00', N'Zdravka Celara 54, Beograd', N'Male', N'2021-05-12 18:30:00', 1)
-INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (10, N'Zoran', N'Savić', N'2009-01-04 00:00:00', N'Milutina Milankovica 2, Beograd', N'Male', N'2021-02-11 14:15:00', 1)
+SET IDENTITY_INSERT [dbo].[MissingPeople] ON
+INSERT INTO [dbo].[MissingPeople] ([IdMiss], [FirstName], [SurName], [DateOfBirth], [Address], [Gender], [DateOfDisappearance], [ImageOfPerson]) VALUES (1, N'Marija', N'Lukovic', N'2014-09-10', N'Cara Lazara 21, Cacak', N'zenski', N'2021-02-12 01:00:00', 1)
+SET IDENTITY_INSERT [dbo].[MissingPeople] OFF
+
+
 
 CREATE TABLE [dbo].[Finding] (
     [DateOfFinding] DATETIME       NOT NULL,
@@ -51,8 +46,10 @@ CREATE TABLE [dbo].[Finding] (
     [IdMis]         INT            NOT NULL,
     PRIMARY KEY CLUSTERED ([DateOfFinding] ASC, [PoliceId] ASC, [IdMis] ASC),
     CONSTRAINT [FK_PoliceId] FOREIGN KEY ([PoliceId]) REFERENCES [dbo].[PoliceOfficers] ([PoliceBadgeNumber]),
-    CONSTRAINT [FK_IdMiss] FOREIGN KEY ([IdMis]) REFERENCES [dbo].[MissingPeople] ([IdMiss])
 );
 
 
 INSERT INTO [dbo].[Finding] ([DateOfFinding], [Location], [Dead], [PoliceId], [IdMis]) VALUES (N'2021-11-10 00:40:00', N'Janka Veselinovića 12, Stepojevac', 0, 334455, 1)
+
+
+
