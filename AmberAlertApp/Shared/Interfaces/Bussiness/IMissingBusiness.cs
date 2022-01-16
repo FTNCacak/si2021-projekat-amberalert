@@ -14,7 +14,7 @@ namespace Shared.Interfaces.Business
        /* String MissingDel(int personId);*/
         List<Missing> MissingByName(String firstName);
         List<Missing> MissingAll();
-        /* int DeleteMissing(Missing m);
-        int UpdateMissing(Missing m);*/
+        int DeleteMissing(int m);
+       /* int UpdateMissing(Missing m);*/
     }
 }

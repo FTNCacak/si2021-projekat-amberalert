@@ -29,7 +29,7 @@
                                     <asp:Button runat="server" Text="Get All Missing People" ID="btnget" CssClass="btn btn-info" Width="200px" OnClick="btnget_Click" />
                                 </div>
                                    <div class="col-md-12 col-md-offset-1 pb-4">
-                                    <asp:Button runat="server" Text="Delete" ID="btndelete" CssClass="btn btn-danger" Width="200px" />
+                                    <asp:Button runat="server" Text="Delete" ID="btndelete" CssClass="btn btn-danger" Width="200px" OnClick="btndelete_Click" />
                                 </div>
                             </div>
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using DataAccessLayer;
 using Shared.Interfaces.Business;
 using Shared.Interfaces.Repository;
 using Shared.Models;
@@ -13,15 +13,13 @@ namespace AmberAlertBusiness
     //Sadrži funkcije za održavanje baze nestalih osoba
     public class MissingBusiness : IMissingBusiness
     {
-        private readonly IMissingRepository missingRepository;
+        private readonly MissingRepository missingRepository;
 
-        public MissingBusiness(IMissingRepository _missings)
-        {
-            missingRepository = _missings;
-        }
+       
 
         public MissingBusiness()
         {
+            this.missingRepository = new MissingRepository();
         }
 
         public String MissingIn(Missing person)
@@ -46,19 +44,20 @@ namespace AmberAlertBusiness
             return MissingAll().Where(person => person.FirstName.Contains(firstName)).ToList();
         }
 
-        /*public bool DeleteMissing(Missing m)
+        public int DeleteMissing(int m)
         {
-            if (this.missingRepository.DeleteMissing(m) > 0)
+            return missingRepository.DeleteMissing(m);
+            /*if (this.missingRepository.DeleteMissing(m) > 0)
             {
-                return true;
+                return 1;
             }
             else
             {
-                return false;
-            }
-        }*/
+                return 0;
+            }*/
+        }
 
-        /*  public bool UpdateMissing(Missing m)
+         public bool UpdateMissing(Missing m)
         {
             if (this.missingRepository.UpdateMissing(m) > 0)
             {
@@ -68,6 +67,6 @@ namespace AmberAlertBusiness
             {
                 return false;
             }
-        }*/
+        }
     }
 }

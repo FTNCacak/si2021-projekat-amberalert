@@ -49,7 +49,7 @@ namespace DataAccessLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = string.Format("INSERT INTO Finding VALUES('{0}','{1}',{2},{3},{4})", f.DateOfFinding, f.Location, f.Dead, f.PoliceId, f.IdMis);
+                sqlCommand.CommandText = string.Format("INSERT INTO Finding VALUES('{0}','{1}','{2}',{3},{4})", f.DateOfFinding, f.Location, f.Dead, f.PoliceId, f.IdMis);
 
                 return sqlCommand.ExecuteNonQuery();
             }
