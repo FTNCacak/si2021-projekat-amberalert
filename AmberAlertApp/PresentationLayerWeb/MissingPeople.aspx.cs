@@ -55,10 +55,6 @@ namespace PresentationLayerWeb
 
         protected void btndelete_Click(object sender, EventArgs e)
         {
-            Missing m = new Missing();
-            m.IdMiss = int.Parse(ListBoxMissingPeople.SelectedItem.ToString().Split('.')[0]);
-            this.missingBusiness.DeleteMissing(m);
-            RefreshData();
         }
     }
 }

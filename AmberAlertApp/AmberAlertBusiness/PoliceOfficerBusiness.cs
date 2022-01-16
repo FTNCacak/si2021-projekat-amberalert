@@ -19,9 +19,7 @@ namespace AmberAlertBusiness
             policeRepository = _officer;
         }
 
-        public PoliceOfficerBusiness()
-        {
-        }
+        
 
         public String PoliceIn(PoliceOfficer officer)
         {

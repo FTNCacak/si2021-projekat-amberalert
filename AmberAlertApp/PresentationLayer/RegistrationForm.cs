@@ -9,16 +9,21 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AmberAlertBusiness;
+using DataAccessLayer;
+using Shared.Interfaces.Business;
+using Shared.Interfaces.Repository;
 using Shared.Models;
 
 namespace PresentationLayer
 {
     public partial class RegistrationForm : Form
     {
-        private readonly PoliceOfficerBusiness policeOfficerBusiness;
+        private readonly IPoliceOfficerBusiness policeOfficerBusiness;
         public RegistrationForm()
         {
-            this.policeOfficerBusiness = new PoliceOfficerBusiness();
+            IPoliceOfficerRepository _policeOfficerRepository = new PoliceOfficerRepository();
+            this.policeOfficerBusiness = new PoliceOfficerBusiness(_policeOfficerRepository);
+            
             InitializeComponent();
         }
 
@@ -98,6 +103,11 @@ namespace PresentationLayer
         {
             List<PoliceOfficer> policajci = this.policeOfficerBusiness.GetAllPoliceOfficers();
             dataGridView1.DataSource = policajci;
+        }
+
+        private void Registration_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
