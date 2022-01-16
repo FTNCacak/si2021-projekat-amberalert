@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AmberAlertBusiness;
+using DataAccessLayer;
+using Shared.Interfaces.Repository;
 using Shared.Models;
 
 namespace PresentationLayer
@@ -17,7 +19,8 @@ namespace PresentationLayer
         private readonly FinidingBusiness finidingBusiness;
         public SearchFindings()
         {
-            this.finidingBusiness = new FinidingBusiness();
+            IFindingRepository findingRepository = new FindingRepository();
+            this.finidingBusiness = new FinidingBusiness(findingRepository);
             InitializeComponent();
         }
 

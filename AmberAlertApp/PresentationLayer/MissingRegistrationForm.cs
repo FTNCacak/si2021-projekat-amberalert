@@ -130,7 +130,7 @@ namespace PresentationLayer
 
         private void buttonMissingDelete_Click(object sender, EventArgs e)
         {
-            if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" || dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
+            /*if (textBoxMissingName.Text == "" || textBoxMissingSurname.Text == "" || dateTimePickerMissingDateOfBirth.Value == DateTime.Now || textBoxMissingAddress.Text == "" || textBoxMissingGender.Text == "" || dateTimePickerMissingDate.Value == DateTime.Now || checkBoxMissingPhoto.Checked == false)
             {
                 MessageBox.Show("Da biste obrisali podatke o osobi morate selektovati osobu!");
 
@@ -139,9 +139,8 @@ namespace PresentationLayer
             
 
 
-
             else
-            {
+            {*/
                 Missing m = new Missing();
 
                 m.FirstName = textBoxMissingName.Text;
@@ -166,8 +165,10 @@ namespace PresentationLayer
                 textBoxMissingGender.Text = "";
                 dateTimePickerMissingDate.Value = DateTime.Now;
                 checkBoxMissingPhoto.Checked = false;
-            }
-        }
+           // missingBusiness.DeleteMissing(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+
+        //}
+    }
 
         private void MissingRegistrationForm_Load(object sender, EventArgs e)
         {
@@ -178,6 +179,11 @@ namespace PresentationLayer
         {
             List<Missing> nestali = this.missingBusiness.MissingAll();
             dataGridView1.DataSource = nestali;
+        }
+
+        private void groupBox_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

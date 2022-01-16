@@ -7,13 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AmberAlertBusiness;
+using DataAccessLayer;
+using Shared.Interfaces.Business;
+using Shared.Interfaces.Repository;
 
 namespace PresentationLayer
 {
+   
     public partial class HomeForm : Form
     {
+        private readonly IFindingBusiness findingBusiness;
         public HomeForm()
         {
+            IFindingRepository _findingRepository = new FindingRepository();
+            this.findingBusiness = new FinidingBusiness(_findingRepository);
             InitializeComponent();
         }
 

@@ -76,7 +76,7 @@ namespace DataAccessLayer
             }
 
         }
-     public int DeleteMissing(Missing m)
+     public int DeleteMissing(int m)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connString))
             {
@@ -85,7 +85,8 @@ namespace DataAccessLayer
 
                     SqlCommand command = new SqlCommand();
                     command.Connection = sqlConnection;
-                    command.CommandText = string.Format("DELETE FROM MissingPeople WHERE IdMiss = {0}", m.IdMiss);
+                    command.CommandText = string.Format("DELETE FROM MissingPeople WHERE IdMiss = @IdMiss");
+                    command.Parameters.AddWithValue("@IdMi/*s*/s", m);
 
                     return command.ExecuteNonQuery();
                 }

@@ -45,7 +45,8 @@ CREATE TABLE [dbo].[Finding] (
     [PoliceId]      INT            NOT NULL,
     [IdMis]         INT            NOT NULL,
     PRIMARY KEY CLUSTERED ([DateOfFinding] ASC, [PoliceId] ASC, [IdMis] ASC),
-    CONSTRAINT [FK_PoliceId] FOREIGN KEY ([PoliceId]) REFERENCES [dbo].[PoliceOfficers] ([PoliceBadgeNumber]),
+    CONSTRAINT [FK_MissId] FOREIGN KEY ([IdMis]) REFERENCES [dbo].[MissingPeople] ([IdMiss]),
+    CONSTRAINT [FK_PoliceId] FOREIGN KEY ([PoliceId]) REFERENCES [dbo].[PoliceOfficers] ([PoliceBadgeNumber])
 );
 
 

@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 using Shared.Interfaces.Business;
 using Shared.Interfaces.Repository;
 using Shared.Models;
-using DataAccessLayer;
-
 
 namespace AmberAlertBusiness
 {
@@ -43,3 +41,4 @@ namespace AmberAlertBusiness
         }
     }
 }
+

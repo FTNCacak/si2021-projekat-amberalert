@@ -18,16 +18,13 @@ namespace AmberAlertBusiness
 
         public FinidingBusiness(IFindingRepository _findings)
         {
-            findingRepository = _findings;
+            this.findingRepository = _findings;
         }
 
-        public FinidingBusiness()
-        {
-        }
-
+        
         public List<Find> GetFindings()
         {
-            return this.findingRepository.GetAllFinding();
+            return findingRepository.GetAllFinding();
         }
 
         public String FindingsIn(Find f)
